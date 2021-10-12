@@ -1,0 +1,17 @@
+body{
+    background-color:aquamarine;
+    color:red;
+}
+.heading{
+    font-size:20px;
+    border-radius:10px;
+    letter-spacing:10px;
+}
+span  {
+    font-size:30px;
+}
+#result,#cam{
+    border:2px dashed black;
+    width:350px;
+    height:300px;
+}

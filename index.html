@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Emotion to Emoji</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<div class="container">
+<center>
+    <h1 class="btn btn-warning heading">
+        EMOTION TO EMOJI 
+        <br>
+        <span>
+            &#128514;
+        </span>
+        <span>
+            &#128549;
+        </span>
+        <span>
+            &#128545;
+        </span>
+        <span>
+            &#128561;
+        </span>
+        <span>
+            &#128126;
+        </span>
+        <span>
+            &#129296;
+        </span>
+        <span>
+            &#129311;
+        </span>
+    </h1>
+    <br>
+    <br>
+    <p style="font-size:20px;">Take Your Selfie To Generate Emoji
+    <br>
+<b style="color:yellow;">Are You Happy?</b>
+<br>
+<b  style="color:blue;">Are You Sad?</b>
+<br>
+<b  style="color:red;">Are You Angry?</b>
+</p>
+<br>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+<label>Webcam View</label>
+<br>
+<div id="cam"></div>
+<br>
+<br>
+<button class="btn btn-danger" onclick="cam_view()">Capture Image</button>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <label>Prediction 1 </label>
+    <br>
+    <p id="emotion_name_1" class="emotion_name"></p>
+    <p class="emoji" id="emoji_one"></p>
+    <label>Prediction 2 </label>
+    <br>
+    <p id="emotion_name_2" class="emotion_name"></p>
+    <p class="emoji" id="emoji_two"></p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <label>SnapShot</label>
+        <br>
+        <div id="result"></div>
+        <br>
+        <br>
+        <button class="btn btn-success" onclick="predict_result()">Predict Emotion</button>
+        </div>
+</center>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
